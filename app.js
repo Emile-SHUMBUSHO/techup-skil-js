@@ -8,10 +8,15 @@ const participants = [
     { name: "LILIANE", age: 21, cameTme: 9 },
     { name: "CHANICE", age: 21, cameTme: 10 },
   ];
-  const participantsObj = [];
-  for (let i in participants){
-      if(participants[i].age > 20 && participants[i].cameTme === 10){
-        participantsObj.push(participants[i]);
-      }
-  }
-  console.log(participantsObj);
+//   let result = [];
+//   for(let i in participants)
+//   {
+//   if(participants[i].age === 22 && participants[i].cameTme === 11)
+//   {
+//   result.push(participants[i]);
+//   }
+//   }
+//   console.log(result);
+
+  let result2 = participants.filter((element) => element.age === 22 && element.cameTme === 11);
+    console.log(result2)
